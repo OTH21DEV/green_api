@@ -1,0 +1,31 @@
+.new-chat-search-bar {
+  position: relative;
+  display: flex;
+  width: calc(100% - 30px);
+  margin: 0 15px;
+}
+
+.new-chat-search-bar__icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  width: 24px;
+}
+
+.new-chat-search-bar__input {
+  height: 32px;
+  border: none;
+  padding: 6px 16px;
+  padding-left: 48px;
+  width: 100%;
+  border-radius: 8px;
+  background: var(--chat-lighter-background);
+  color: var(--chat-light-color);
+  font-size: var(--extra-small-font-size);
+}
+.new-chat-search-bar__input::placeholder {
+  color: var(--chat-light-color);
+  font-size: var(--extra-small-font-size);
+}

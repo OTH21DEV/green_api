@@ -1,0 +1,18 @@
+.notice__icon {
+  width: 15px;
+  margin-right: 5px;
+}
+.notice {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  font-size: var(--tiny-font-size);
+  width: auto;
+  width: 100vw;
+}
+.notice p {
+  margin: 0;
+  width: auto;
+}
