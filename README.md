@@ -29,7 +29,7 @@ Follow these steps to run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/whatsapp-messaging-ui.git
+   git clone https://github.com/OTH21DEV/green_api
 
 2. Navigate to the project directory:
    ```bash
