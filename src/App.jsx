@@ -9,13 +9,13 @@ function App() {
   const [credentials, setCredentials] = useState(null);
   return (
    <BrowserRouter>
-    {/* // <Router> */}
+
       <Routes>
         <Route path="/" element={<Login setCredentials={setCredentials} />}></Route>
         <Route path="/chat" element={<Chat credentials={credentials} />}></Route>
       </Routes>
       </BrowserRouter> 
-    {/* // </Router> */}
+
   );
 }
 
