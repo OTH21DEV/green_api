@@ -45,7 +45,7 @@ Follow these steps to run the project locally:
 
 5. Access the application:
    ```bash
-    Open your browser to http://localhost:3000.
+    Open your browser to http://localhost:5173.
 
 ## Features and Technologies Used
 
