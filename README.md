@@ -49,9 +49,23 @@ Follow these steps to run the project locally:
    ```bash
     Open your browser to http://localhost:5173.
 
-## Features and Technologies Used
+## Testing
 
-- React.js: A JavaScript library for building user interfaces.
-- CSS: Used for styling the components.
-- BEM (Block Element Modifier): A methodology for naming and organizing CSS classes.
-- Green - API
+This project includes unit and integration tests using Jest and React Testing Library to ensure the functionality of individual components and their interactions.
+
+- Jest: A JavaScript testing framework for creating, running, and structuring tests.
+- React Testing Library: A set of utilities to test React components without relying on implementation details.
+
+
+### Running Tests 
+
+The tests will check various aspects of the components such as rendering, user interactions, and expected outputs.
+
+To execute the test suite, run the following command:
+ ```bash
+    npm run test:watch
+
+To check the coverage , run the following:
+
+ ```bash
+    npm run test:coverage
