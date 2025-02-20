@@ -5,7 +5,7 @@ const ChatSearch = () => {
   const [searchValue, setSearchValue] = useState("");
   return (
     <form className="new-chat-search-bar">
-      <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" class="new-chat-search-bar__icon" version="1.1" x="0px" y="0px" enable-background="new 0 0 24 24">
+      <svg viewBox="0 0 24 24" height="24" width="24" preserveAspectRatio="xMidYMid meet" className="new-chat-search-bar__icon" version="1.1" x="0px" y="0px" enableBackground="new 0 0 24 24">
         <title>search</title>
         <path
           fill="#8696a0"
