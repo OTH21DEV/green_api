@@ -57,15 +57,14 @@ This project includes unit and integration tests using Jest and React Testing Li
 - React Testing Library: A set of utilities to test React components without relying on implementation details.
 
 
-### Running Tests 
+## Running Tests 
 
 The tests will check various aspects of the components such as rendering, user interactions, and expected outputs.
 
-To execute the test suite, run the following command:
- ```bash
-    npm run test:watch
+1. To execute the test suite, run the following command:
+   ```bash 
+   npm run test:watch
 
-To check the coverage , run the following:
-
- ```bash
-    npm run test:coverage
+2. To check the coverage, run the following command:
+    ```bash
+   npm run test:coverage
