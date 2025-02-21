@@ -3,15 +3,16 @@ import "./ChatsList.css";
 import convertTimestamp from "../../utils/formatTImestamp";
 
 const ChatsList = ({ chats, handleSelectChat, isChatsListVisible }) => {
+ console.log(chats)
   return (
     <>
-      {Object.keys(chats).map((phone) => {
+      {Object.keys(chats).map((phone,index) => {
         const messages = chats[phone];
         const lastMessageText = messages.length > 0 ? messages[messages.length - 1].text : "";
         const time = messages.length > 0 ? messages[messages.length - 1].timestamp : "";
 
         return (
-          <div className={`chats-list ${isChatsListVisible ? "visible" : ""}`}>
+          <div className={`chats-list ${isChatsListVisible ? "visible" : ""}`} key={index}>
             <div className="chats-list__wrapper">
               <div key={phone} className="chats-list__item" onClick={() => handleSelectChat(phone)}>
                 {phone}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Header from "../components/Header/Header";
-import LoginForm from "../components/LoginForm/LoginForm";
-import EncryptionNotice from "../components/EncryptionNotice/EncryptionNotice";
+import Header from "../../components/Header/Header";
+import LoginForm from "../../components/LoginForm/LoginForm";
+import EncryptionNotice from "../../components/EncryptionNotice/EncryptionNotice";
 import { useNavigate } from "react-router-dom";
 // import { handleAuth } from "../services/auth";
 

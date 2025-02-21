@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import ChatHeader from "../components/ChatHeader/ChatHeader";
-import ChatFilter from "../components/ChatFilter/ChatFilter";
-import ChatSearch from "../components/ChatSearch/ChatSearch";
-import ChatForm from "../components/ChatForm/ChatForm";
-import receiveNotification, { deleteNotification, sendMessage } from "../services/message.js";
-import formatMessage from "../utils/formatData.js";
-import ChatsList from "../components/ChatsList/ChatsList";
-import ChatConversation from "../components/ChatConversation/ChatConversation.jsx";
+import ChatHeader from "../../components/ChatHeader/ChatHeader.jsx";
+import ChatFilter from "../../components/ChatFilter/ChatFilter.jsx";
+import ChatSearch from "../../components/ChatSearch/ChatSearch.jsx";
+import ChatForm from "../../components/ChatForm/ChatForm.jsx";
+import receiveNotification, { deleteNotification, sendMessage } from "../../services/message.js";
+import formatMessage from "../../utils/formatData.js";
+import ChatsList from "../../components/ChatsList/ChatsList.jsx";
+import ChatConversation from "../../components/ChatConversation/ChatConversation.jsx";
 
 const Chat = ({ credentials }) => {
   const [phoneNumber, setPhoneNumber] = useState();
@@ -38,6 +38,7 @@ const Chat = ({ credentials }) => {
   };
 
   const handleCreateChatSubmit = (e) => {
+    console.log(chats)
     e.preventDefault();
     if (phoneNumber && !chats[phoneNumber]) {
       setChats({ ...chats, [phoneNumber]: [] });
